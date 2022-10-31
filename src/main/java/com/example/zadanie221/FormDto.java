@@ -9,6 +9,10 @@ public class FormDto {
         return receiver;
     }
 
+    public void setReceiver(String receiver) {
+        this.receiver = receiver;
+    }
+
     public String getTitle() {
         return title;
     }

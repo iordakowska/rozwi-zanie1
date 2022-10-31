@@ -14,24 +14,18 @@ public class MailController {
         this.mailService = mailService;
     }
 
-    @GetMapping("/")
-    public String home() {
-        return "home";
-    }
-
-    @GetMapping("/regulamin")
-    public String regulamin() {
-        return "regulamin";
-    }
-
-    @GetMapping("/kontakt")
+    @GetMapping("kontakt")
     public String form(Model model) {
         model.addAttribute("dto", new FormDto());
         return "contact";
     }
-    @PostMapping("/send")
+    @PostMapping("send")
     public String sendMail(FormDto dto) {
-        mailService.sendMail(dto);
-        return "/send";
+        if(dto.getReceiver() != null && dto.getReceiver() != "") {
+            mailService.sendMail(dto);
+            return "send";
+        }else {
+            return "error";
+        }
     }
 }

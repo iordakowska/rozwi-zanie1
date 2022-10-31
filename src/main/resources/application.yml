@@ -1,9 +1,16 @@
 spring:
   mail:
-    host: imap.poczta.onet.pl
+    host: smtp.poczta.onet.pl
     port: 465
     username: forsale1@op.pl
-    password: xxx.ppp
-    properties:
+    password: xxx.yyy  # to zmieniam jak robię run
+  properties:
+    mail:
+      debug: true
+      smtp:
+        ssl:
+          enable: true
+        starttls:
+          enable: true
 
 
