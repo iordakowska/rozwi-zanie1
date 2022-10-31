@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Strona główna</title>
+
+
+</head>
+<body>
+<div th:replace="fragments :: header"></div>
+<div>
+    <div style="text-align: center">
+        <img style="max-width: 800px; width: 100%; height: 400px" src="/clean.jpg">
+    </div>
+
+    <h2>Podstawowe informacje</h2>
+    <p>Jesteśmy Firmą Sprzątającą, Dla Której Sprzątanie Mieszkań I Biur Nie Ma Żadnych Tajemnic. Od Lat Z Powodzeniem Proponujemy Sprzątanie Biur I Powierzchni Komercyjnych.</p>
+
+    <h2>Jak sprzątamy</h2>
+    <p>Sekretem sprawnego sprzątania jest podążanie za jasno określonym planem zgodnie z założonym limitem czasowym oraz wyposażenie się w odpowiednio dobrane i funkcjonalne akcesoria do sprzątania. Dzieląc swoje mieszkanie na konkretne strefy i porządkowanie ich w ustalonym kierunku pozwoli Ci na spędzenie minimalnej ilości czasu w każdym pomieszczeniu. Istnieje jeszcze jeden sprawdzony sposób, który wymaga jedynie kilku kliknięć na stronie internetowej lub wykonanie jednego telefonu — wynajęcie profesjonalnej ekipy sprzątającej CleanWhale, która sprawnie rozprawi się z każdym bałaganem w Twoim domu..</p>
+
+    <h3>Odnośniki</h3>
+    <a href="/kontakt">Kontakt</a><br>
+    <a href="/regulamin">Regulamin</a>
+
+</div>
+
+<div th:replace="fragments :: footer">
+
+</div>
+</body>
+</html>
